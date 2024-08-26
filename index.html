@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Sentenças - Gramáticas Regulares</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Gerador de Sentenças - Gramáticas Regulares</h1>
+    
+    <div class="field">
+        <label for="grammar">Escolha uma gramática:</label>
+        <select id="grammar">
+            <option value="S ::= aSb | ab">S ::= aSb | ab</option>
+            <option value="S ::= aSa | a">S ::= aSa | a</option>
+            <option value="S ::= bS | a">S ::= bS | a</option>
+        </select>
+    </div>
+    
+    <div class="field">
+        <button id="generateSentence">Gerar Sentença</button>
+    </div>
+    
+    <div class="result" id="result">
+        <h2>Sentença Gerada:</h2>
+        <div id="generatedSentence"></div>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
